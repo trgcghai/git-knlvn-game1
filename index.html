@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Game lật thẻ bài</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="name-game">game lật thẻ bài</div>
+        <!-- hàng thẻ đầu tiên -->
+        <div class="row">
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+          </div>
+        </div>
+        <!-- hàng thẻ thứ hai -->
+        <div class="row">
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+        </div>
+        <!-- hàng thẻ thứ ba -->
+        <div class="row">
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="col-4 card-container">
+            <div onclick = "flipCard(this)" class = "thecard">
+              <div class="front"></div>
+              <div class="back"></div>
+            </div>
+          </div>
+        </div>
+        <!-- bảng điểm -->
+        <div class="score-board">
+          <h2 class="text">Điểm</h2>
+          <div class="score">0</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- hiện thị sau khi kết thúc trò chơi -->
+    <div class="afterWin-container" id="js-afterWin">
+      <div class="afterWin">
+        <div class="afterWin__title">
+          Bạn đã chiến thắng !!
+        </div>
+        <div class="afterWin__scoreBoard">
+          <h3 class="text">Điểm của bạn là:</h3>
+          <div class="score" id="js-afterWin__score"></div>
+        </div>
+        <div class="afterWin__nav">
+          <a href="index.html" target="_self" class="btn playagain">Chơi lại</a>
+          <a href="http://iuh.7supermanknlvn.online/" target="_self" class="btn main-menu">Về trang chủ</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
